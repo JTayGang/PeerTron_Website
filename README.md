@@ -5,10 +5,10 @@ A student Capstone project creating a salary transparency platform design for Pe
 ## Screenshots
 
 ### Homepage
-![How It Works Page](./screenshots/Homepage.png)
+![How It Works Page](./Screenshots/Homepage.png)
 
 ### Who we are Page
-![Browse Data Page](./screenshots/who-we-are.png)
+![Browse Data Page](./Screenshots/who-we-are.png)
 
 ### Contact Page
-![Contact Page](./screenshots/contact.png)
+![Contact Page](./Screenshots/contact.png)
