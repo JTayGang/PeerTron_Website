@@ -1,5 +1,14 @@
-# PeerTron_Website
-Capstone project at ASU
+# Peertron Website (WIP)
 
+A student Capstone project creating a salary transparency platform design for Peertron.
 
-For now I am uploading a previous project I did for another class as a starting point while we work out the page layout details and functionalities.
+## Screenshots
+
+### Homepage
+![How It Works Page](./screenshots/Homepage.png)
+
+### Who we are Page
+![Browse Data Page](./screenshots/who-we-are.png)
+
+### Contact Page
+![Contact Page](./screenshots/contact.png)
