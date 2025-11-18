@@ -21,10 +21,11 @@
         .header {
             background: rgba(255, 255, 255, 0.95);
             backdrop-filter: blur(10px);
-            padding: 1.5rem 2rem;
+            padding: 1rem 1.5rem;
             position: fixed;
             width: 100%;
             top: 0;
+            left: 0;
             z-index: 1000;
             box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
         }
@@ -33,12 +34,12 @@
             max-width: 1200px;
             margin: 0 auto;
             display: flex;
-            justify-content: space-between;
+            justify-content: flex-start;
             align-items: center;
         }
 
         .logo {
-            font-size: 2rem;
+            font-size: 1.75rem;
             font-weight: 800;
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             -webkit-background-clip: text;
@@ -51,7 +52,7 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            padding: 6rem 2rem 4rem;
+            padding: 5rem 1.5rem 3rem;
             position: relative;
             overflow: hidden;
         }
@@ -198,7 +199,7 @@
         }
 
         .hero h1 {
-            font-size: 3.5rem;
+            font-size: clamp(2rem, 5vw, 3.5rem);
             color: white;
             margin-bottom: 1.5rem;
             font-weight: 800;
@@ -207,7 +208,7 @@
         }
 
         .hero p {
-            font-size: 1.3rem;
+            font-size: clamp(1rem, 2.5vw, 1.3rem);
             color: rgba(255, 255, 255, 0.95);
             margin-bottom: 3rem;
             line-height: 1.6;
@@ -218,7 +219,7 @@
 
         .features {
             background: white;
-            padding: 5rem 2rem;
+            padding: 4rem 1.5rem;
         }
 
         .features-container {
@@ -228,7 +229,7 @@
 
         .section-title {
             text-align: center;
-            font-size: 2.5rem;
+            font-size: clamp(1.75rem, 4vw, 2.5rem);
             margin-bottom: 1rem;
             color: #2d3748;
             font-weight: 700;
@@ -236,23 +237,24 @@
 
         .section-subtitle {
             text-align: center;
-            font-size: 1.2rem;
+            font-size: clamp(1rem, 2vw, 1.2rem);
             color: #718096;
-            margin-bottom: 4rem;
+            margin-bottom: 3rem;
             max-width: 600px;
             margin-left: auto;
             margin-right: auto;
+            padding: 0 1rem;
         }
 
         .features-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 2.5rem;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem;
         }
 
         .feature-card {
             background: linear-gradient(135deg, #f6f8fb 0%, #ffffff 100%);
-            padding: 2.5rem;
+            padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
             transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -290,7 +292,7 @@
 
         .cta-section {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            padding: 5rem 2rem;
+            padding: 4rem 1.5rem;
             text-align: center;
             color: white;
         }
@@ -301,20 +303,20 @@
         }
 
         .cta-section h2 {
-            font-size: 2.8rem;
+            font-size: clamp(1.75rem, 4vw, 2.8rem);
             margin-bottom: 1.5rem;
             font-weight: 700;
         }
 
         .cta-section p {
-            font-size: 1.2rem;
-            margin-bottom: 3rem;
+            font-size: clamp(1rem, 2vw, 1.2rem);
+            margin-bottom: 2.5rem;
             opacity: 0.95;
         }
 
         .signup-form {
             background: white;
-            padding: 2.5rem;
+            padding: 2rem;
             border-radius: 20px;
             box-shadow: 0 20px 60px rgba(0, 0, 0, 0.2);
             max-width: 500px;
@@ -388,20 +390,119 @@
         }
 
         @media (max-width: 768px) {
+            .header {
+                padding: 0.875rem 1rem;
+            }
+
+            .logo {
+                font-size: 1.5rem;
+            }
+
+            .hero {
+                padding: 5rem 1rem 2rem;
+                min-height: 90vh;
+            }
+
             .hero h1 {
-                font-size: 2.5rem;
+                font-size: 2rem;
+                margin-bottom: 1rem;
             }
 
             .hero p {
-                font-size: 1.1rem;
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .features {
+                padding: 3rem 1rem;
             }
 
             .section-title {
-                font-size: 2rem;
+                font-size: 1.75rem;
+            }
+
+            .section-subtitle {
+                font-size: 1rem;
+                margin-bottom: 2rem;
             }
 
             .features-grid {
                 grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+
+            .feature-card {
+                padding: 1.5rem;
+            }
+
+            .feature-icon {
+                width: 60px;
+                height: 60px;
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            .feature-card h3 {
+                font-size: 1.25rem;
+            }
+
+            .cta-section {
+                padding: 3rem 1rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.75rem;
+                margin-bottom: 1rem;
+            }
+
+            .cta-section p {
+                font-size: 1rem;
+                margin-bottom: 2rem;
+            }
+
+            .signup-form {
+                padding: 1.5rem;
+            }
+
+            .form-group {
+                margin-bottom: 1.25rem;
+            }
+
+            .form-group input,
+            .form-group select {
+                padding: 0.875rem;
+            }
+
+            .submit-btn {
+                padding: 1rem;
+                font-size: 1rem;
+            }
+
+            .footer {
+                padding: 1.5rem 1rem;
+                font-size: 0.875rem;
+            }
+
+            .shape {
+                opacity: 0.5;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .logo {
+                font-size: 1.35rem;
+            }
+
+            .hero h1 {
+                font-size: 1.75rem;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .signup-form {
+                padding: 1.25rem;
             }
         }
     </style>
