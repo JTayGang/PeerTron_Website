@@ -5,13 +5,13 @@ A student Capstone project creating a salary transparency platform design for Pe
 ## Screenshots
 
 ### Landing Section
-![Landing Page](./screenshot/Landing.png)
+![Landing Page](PeerTron_Website/screenshot/Landing.png)
 
 ### Why Peertron?
-![Why Peertron Page](./screenshot/why.png)
+![Why Peertron Page](PeerTron_Website/screenshot/why.png)
 
 ### Trust
-![Trust infographic](./screenshot/Trusted.png)
+![Trust infographic](PeerTron_Website/screenshot/Trusted.png)
 
 ### Contact Page
-![Contact Page](./screenshot/Contact.png)
+![Contact Page](PeerTron_Website/screenshot/Contact.png)
